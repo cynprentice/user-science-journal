@@ -1,19 +1,60 @@
+a {
+    text-decoration: none;
+    color: #212529;
+}
+/* unvisited link */
+a:link {
+  color: #212529;
+}
 
-  .post-preview>a:focus, .post-preview>a:hover {
+/* visited link */
+a:visited {
+  color: green;
+}
+
+/* mouse over link */
+a:hover {
+    text-decoration: underline;
+    color: darkblue;
+}
+
+/* selected link */
+a:active {
+    color: darkblue;
+}
+
+p a.link {
+    color: #212529;
+}
+
+p a.hover {
     text-decoration: none;
     color: darkblue;
 }
 
 .post-preview>a {
+    text-decoration: none;
     color: #212529;
 }
+
+.post-preview>a:focus, .post-preview>a:hover {
+    text-decoration: none;
+    color: darkblue;
+}
+
+
 
 .post-preview>.post-meta>a {
     text-decoration: none;
     color: #212529;
 }
 
-.post-preview>.post-meta>a:hover {
+.post-preview>.post-meta>a:focus, .post-preview>.post-meta>a:hover {
     text-decoration: none;
     color: darkblue;
+}
+
+
+.meta a {
+    color: #e3f9ff;
 }
