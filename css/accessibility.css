@@ -1,60 +1,54 @@
-a {
-    text-decoration: none;
-    color: #212529;
-}
-/* unvisited link */
-a:link {
-  color: #212529;
-}
-
-/* visited link */
-a:visited {
-  color: green;
-}
-
-/* mouse over link */
-a:hover {
+a,
+p a {
     text-decoration: underline;
-    color: darkblue;
-}
-
-/* selected link */
-a:active {
-    color: darkblue;
-}
-
-p a.link {
     color: #212529;
 }
 
-p a.hover {
-    text-decoration: none;
-    color: darkblue;
-}
-
-.post-preview>a {
-    text-decoration: none;
-    color: #212529;
-}
-
-.post-preview>a:focus, .post-preview>a:hover {
-    text-decoration: none;
-    color: darkblue;
-}
-
-
-
+.post-preview>a,
 .post-preview>.post-meta>a {
     text-decoration: none;
     color: #212529;
 }
 
-.post-preview>.post-meta>a:focus, .post-preview>.post-meta>a:hover {
-    text-decoration: none;
+a:link,
+p a.link,
+.post-preview>a:link,
+.post-preview>.post-meta>a:link {
+    color: #212529;
+}
+
+a:visited,
+p a:visited,
+.post-preview>a:visited,
+.post-preview>.post-meta>a:visited {
+    color: #463961;
+}
+
+a:hover,
+a:focus,
+a:active,
+p a:hover,
+p a:focus,
+p a:active,
+.post-preview>a:hover,
+.post-preview>a:focus,
+.post-preview>a:active,
+.post-preview>.post-meta>a:hover,
+.post-preview>.post-meta>a:focus,
+.post-preview>.post-meta>a:active {
+    text-decoration: underline;
     color: darkblue;
 }
 
 
 .meta a {
     color: #e3f9ff;
+}
+
+.web-page {
+    border: 2px solid darkgray;
+}
+
+.navbar-brand, .nav-link, .dropdown-item  {
+    text-decoration: none;
 }

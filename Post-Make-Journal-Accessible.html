@@ -33,7 +33,13 @@
     href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
     rel='stylesheet' type='text/css'>
   <link href="css/clean-blog.min.css" rel="stylesheet">
-  <link href="css/clean-blog.css" rel="stylesheet">
+
+  <!-- custom styles for this website-->
+  <link href="css/accessibility.css" rel="stylesheet">
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.0/themes/prism.min.css"
+/>
 </head>
 
 <body>
@@ -56,7 +62,7 @@
               Blog
             </a>
             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
-              <a class="dropdown-item" href="Post-Make-Journal-Accessible.html">Making This Journal Accessible</a>
+              <a class="dropdown-item" href="Post-Make-Journal-Accessible.html">Applying Accessibility</a>
               <a class="dropdown-item" href="Post-Evaluating-Accessibility.html">Evaluating Accessibility</a>
               <a class="dropdown-item" href="Post-Mobile-Usability-Test.html">Mobile Usability Test</a>
               <a class="dropdown-item" href="Post-Usability-Test.html">Usability Test</a>
@@ -81,10 +87,10 @@
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
           <div class="site-heading">
-            <h1>Accessiblity Evaluation</h1>
+            <h1>Applying Accessibility</h1>
             <span class="meta">Posted by
               <a href="#">Cynthia Prentice</a>
-              on May 10, 2020</span>
+              on May 17, 2020</span>
           </div>
         </div>
       </div>
@@ -96,111 +102,162 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
-          <h2>Accessiblity Evaluation for Cascade Service Dogs</h2>
-          <p> 
-            <code> <pre></pre>Code: <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown"
-                  aria-haspopup="true" aria-expanded="false">
-                  Blog
-                </a>
-                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
-                  <a class="dropdown-item" href="Post-Make-Journal-Accessible.html">Making This Journal Accessible</a>
-                  <a class="dropdown-item" href="Post-Evaluating-Accessibility.html">Evaluating Accessibility</a>
-                  <a class="dropdown-item" href="Post-Mobile-Usability-Test.html">Mobile Usability Test</a>
-                  <a class="dropdown-item" href="Post-Usability-Test.html">Usability Test</a>
-                  <a class="dropdown-item" href="Post-Usable-Design.html">Usable Design</a>
-                  <a class="dropdown-item" href="Post-Analyze-Usability.html">Analyze For Usability</a>
-                </div>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="about.html">About</a>
-              </li>
-            </ul>
-          </div></pre></code>
-        
-        </p>
-          <p>Their website speaks to visitors who may be interested in helping the organization through donations or
-            volunteering. It also aims to connect with qualified individuals who are interested in training service
-            dogs or having one as a companion.</p>
-          <p>The Cascade Service Dogs website is:
-            <a href="http://cascadeservicedogs.org/" target="_blank">http://cascadeservicedogs.org/</a>.
-            This post presents recommendations based on an accessbility evaluation of their website.</p>
+          <h2>Accessiblity Evaluation and Fixes for this User Science Journal</h2>
+          <p>This website is a journal of tests and assessments for the User Science and Testing course at Seattle
+            University. This week it's time to apply some of this quarter's learning and make the journal itself
+            accessible.</p>
 
-          <img class="img-fluid" src="img/CascadeServiceDogs/cascadeServiceDogsHomePage.JPG"
-            alt="Cascade Service Dogs Home Page">
-          <span class="caption text-muted">The Home Page for Cascade Service Dogs.</span>
+          <img class="img-fluid web-page" src="img/UserScienceJournal/USJHomepage.JPG" alt="">
+          <span class="caption text-muted">The Home Page for this User Science Journal lists all the posts in the
+            journal.</span>
 
-          <h3>Accessiblity Evaluation Overview</h3>
+          <h3>Accessibility Assessment Overview</h3>
 
-          <h4>Test Methods</h4>
-          <p>The website was evaluated based on <a href=" https://www.w3.org/TR/WCAG21/">Web Content Accessibility
-              Guidelines (WCAG) 2.1</a>, with the assistance of the following tools:</p>
+          <h4>Assessment Scope</h4>
+          <p>I conducted an accessibility review of 3 of the pages of this User Science Journal:</p>
           <ul>
-            <li><a href="https://wave.webaim.org/" target="_blank">Web Accessibility Evaluation Tool (WAVE)</a></li>
-            <li><a href="https://webaim.org/standards/wcag/checklist" target="_blank">WebAIM's WCAG 2 Checklist</a>
+            <li><a href="http://cyprweb.com/user-science-journal/index.html" target="_blank">Home Page</a></li>
+            <li><a href="http://cyprweb.com/user-science-journal/about.html" target="_blank">About Page</a>
             </li>
-            <li><a href="https://developers.google.com/web/tools/chrome-devtools/accessibility/reference"
-                target="_blank">Chrome Dev Tools</a></li>
-            <li><a href=" http://validator.w3.org/" target="_blank">W3C Markup Validation Service</a></li>
+            <li><a href="http://cyprweb.com/user-science-journal/Post-Analyze-Usability.html" target="_blank">My first
+                post: Analyzing for Usability</a></li>
+
+          </ul>
+          <h4>Assessment Approach</h4>
+          <p>I performed 4 checks of each page:</p>
+          <ul>
+            <li> Error check with the <a href="https://wave.webaim.org/" target="_blank">Web Accessibility Evaluation
+                Tool (WAVE)</a></li>
+            <li>Review of image alt tags </li>
+            <li>Keyboard navigation of all links</li>
+            <li>Review of the header tags to see if they provided a useful outline of the content</li>
           </ul>
 
           <h3>Accessiblity Successes</h3>
-          <h4>Simplicity</h4>
-          <img class="img-fluid" src="img/CascadeServiceDogs/CascadeServiceDogsAboutUs.JPG" alt="">
-          <span class="caption text-muted">The About Us page has a navigation menu, decorative image (with caption), and
-            text.</span>
-          <p>The Cascade Service Dogs website has a simple structure of navigation menus, text base content, and
-            decorative images. This eliminates the need for alternative instructions or descriptions for things like
-            time-based content, audio, content flashes, animation, and path based gestures.</p>
-          <h4>Color Contrast</h4>
-          <img class="img-fluid" src="img/CascadeServiceDogs/navMenuContrast.JPG" alt="">
-          <span class="caption text-muted">WAVE's contrast tool shows a color ratio of 11.72:1 for Cascade Service Dog
-            navigation menu</span>
-          <p>The navigation menu has a dark red (#750026) background and white text. This combination has a contrast
-            score of 11:76:1 which meets all of WCAG 2.1 criteria for text contrast. This color combination is highly
-            readable for users.</p>
-          <h4>Alternatives for Images</h4>
-          <img class="img-fluid" src="img/CascadeServiceDogs/noImagesCSDHomePage.JPG" alt="">
-          <span class="caption text-muted">The home page with alternative text instead of images.</span>
-          <p>While the images on the site are not essential to understand the structure or content of the site, there
-            are still alt tags for all of them.</p>
+          <img class="img-fluid web-page" src="img/UserScienceJournal/postNoImages.JPG" alt="">
+          <span class=" caption text-muted">When removing the images from this User Science Journal post, the alt text
+            and captions summarize the key points so the reader can follow the analysis in the post.</span>
+          <ul>
+            <li>The pages used both alt tags and image captions to describe the images. Users who cannot see the images
+              can receive the key information conveyed by the image by reading this text or having it read to them with
+              a screen reader.</li>
+            <li>All links were accessible via keyboard navigation. Users who cannot navigate with a mouse or touch pad
+              can still access all links to navigate through the site.</li>
+          </ul>
 
-          <h3>Opportunities to Improve Accessiblity</h3>
-          <h4>Page Structure</h4>
-          <img class="img-fluid" src="img/CascadeServiceDogs/CascadeServiceDogsHomePageStructure.JPG" alt="">
-          <span class="caption text-muted">The home page content includes a mission statement, links to other pages, a
-            blog post, and donations section.</span>
-          <img class="img-fluid" src="img/CascadeServiceDogs/CascadeServiceDogsHomePageHeaders.JPG" alt="">
-          <span class="caption text-muted">The Cascade Service Dogs Home Page uses header tags, but they do not convey
-            the structure of the page.</span>
+          <h3>Accessibility Fixes</h3>
+          <h4>Fix 1: Removed empty h2 header </h4>
+          <div>
+            <pre><code class="language-html">
+     &lt;div class=&quot;site-heading&quot;&gt;
+       &lt;h1&gt;Analyze for Usability&lt;/h1&gt;
+       &lt;h2 class=&quot;subheading&quot;&gt;  &lt;/h2&gt;
+          </code></pre>
+          </div>
+          <p>The WAVE tool identified an h2 tag on all of my posts that didn't have any content. This tag was part of
+            the <a href="https://startbootstrap.com/themes/clean-blog/" target=_blank>Bootstrap Clean Blog template</a> used to build this site. I chose not to use that tag to put subheaders on my
+            posts, but had left the empty tag. While invisible to those looking at the webpage, this could be confusing
+            for a screen reader, so I removed these empty placeholder tags.</p>
 
-          <p>To improve page navigation, especially with a screen reader, header tags should be used to outline page
-            sections and subsections.
+          <h4>Fix 2: Added missing Aria label </h4>
+
+          <img class="img-fluid" src="img/UserScienceJournal/WAVEHomePage.JPG"
+            alt="WAVE results for User Science Journal Home Page">
+          <span class="caption text-muted">The WAVE error for "1 X Empty Link" identified an icon link to my github
+            account that did not have a corresponding text label.</span>
+
+            <div>
+              <pre><code class="language-html">
+&lt;a href=&quot;https://github.com/cynprentice&quot; target=&quot;_blank&quot;
+  aria-label=&quot;Github&quot;&gt;&lt;/a&gt;
+            </code></pre>
+            </div>
+          <p>With the aria label of Github, users who cannot see the icon will know that the link goes to a github page.</p>
+
+          <h4>Fix 3: Improved page outline using headers</h4>
+          <img class="img-fluid web-page" src="img/UserScienceJournal/PostContent.JPG" alt="Original usability post for the Xfinity website">
+          <span class="caption text-muted">This post analyzing the usability of the xFinity website was missing a header at the beginning of the content and subheaders with in each evaluation criterion.</span>
+          <img class="img-fluid web-page" src="img/UserScienceJournal/postContentBetterHeaders.JPG" alt="Updated usability post of the Xfinity website">
+          <span class="caption text-muted">This updated post has an additional headers to improve the organization and readability of the post.</span>
+          
+          <p>I added an H2 header at the beginning of the content to introduce the post. I also added h3 headers under each evaluation criterion to identify sections for my assessment and my recommendations. This will help all users follow the text and will provide a more granular outline for screen readers.</p>
+
+          <h3>Challenges Fixing Accessibility Issues</h3>
+          <h4>Low Color Contrast of Links</h4>
+          <img class="img-fluid web-page" src="img/UserScienceJournal/ColorContrastFail.JPG" alt="">
+          <span class="caption text-muted">The WAVE tool identifying low color contrast issues with the links through the User Science Journal. They had an insufficient contrast ratio of 3.97:1.</span>
+
+          <p>I added new css to use darker colors for links in all the different states (active, focus, hover, visited). 
+            It was challenging to find all the custom colors applied by the Clean Blog template, so I could overide them.
+          </p>
+           <p> On the screen I see these colors and the improved color contrast reflected. 
+               However, the WAVE tool still alerts me of low color contrast on my links due to a light blue color that I can't find.</p>
+
+          <pre><code class="language-css">
+      a,
+      p a {
+          text-decoration: underline;
+          color: #212529;
+      }
+      
+      .post-preview&gt;a,
+      .post-preview&gt;.post-meta&gt;a {
+          text-decoration: none;
+          color: #212529;
+      }
+      
+      a:link,
+      p a.link,
+      .post-preview&gt;a:link,
+      .post-preview&gt;.post-meta&gt;a:link {
+          color: #212529;
+      }
+      
+      a:visited,
+      p a:visited,
+      .post-preview&gt;a:visited,
+      .post-preview&gt;.post-meta&gt;a:visited {
+          color: #463961;
+      }
+      
+      a:hover,
+      a:focus,
+      a:active,
+      p a:hover,
+      p a:focus,
+      p a:active,
+      .post-preview&gt;a:hover,
+      .post-preview&gt;a:focus,
+      .post-preview&gt;a:active,
+      .post-preview&gt;.post-meta&gt;a:hover,
+      .post-preview&gt;.post-meta&gt;a:focus,
+      .post-preview&gt;.post-meta&gt;a:active {
+          text-decoration: underline;
+          color: darkblue;
+            }
+            </code></pre>
             <ul>
               <li>The h4 headers that are links to other pages should be links or buttons instead of headers. This
-                section could also benefit from an h2 header since this is not subcontent for the "Our Mission" section. </li>
+                section could also benefit from an h2 header since this is not subcontent for the "Our Mission" section.
+              </li>
               <li>Rewriting the second h2 tag to "About Cascade Service Dogs" would elimitate
                 duplicating the h1 tag for the page and provide more detail as to the content of that section.</li>
               <li> The
-                donations section is not a subsection of any other part of the page, so it should also have an h2 rather than h4 tag.
+                donations section is not a subsection of any other part of the page, so it should also have an h2 rather
+                than h4 tag.
               </li>
             </ul>
           </p>
-          <h4>Keyboard Navigation</h4>
-          <img class="img-fluid" src="img/CascadeServiceDogs/navMenuProgramsServices.png" alt="">
-          <span class="caption text-muted">The "Services" Page is visible only when using a mouse to hover over the
-            "Programs" menu
-            option.</span>
-          <p>While the keyboard can be used to navigate to all menu options, the dropdown for subsections, like
-            "Services", is not visible when the element is selected. To create a better user experience, all selectable
-            elements should be visible when they are selected through keyboard navigation.
-          </p>
 
 
-
-        </div>
+    <h3>Is the Bootstrap Framework overall helpful or harmful to the goal of creating accessible web pages?</h3>
+      <p>I was suprised by how much of my accessibility successes and failures could be attributed to the Bootstrap framework, or more specifically the Clean Blog bootstrap template I chose to use for this journal.</p>
+      <p>This speaks to the power and responsibility of templates to support accessible design.
+         If the default colors (especially those hard to change link colors) have the correct color contrast, blogs leveraging the site will inherit accessible colors. 
+        Because the sample post had placeholder HTML for alt tags and image captions, I was reminded to fill in this information when copying and updating the post template. 
+        Aria labels for the navigation was built in, so I didn't have to add these. </p>
+    <p>I've concluded that one of the best ways to make an accessible site is to start with an accessible template.</p>  
+    </div>
       </div>
     </div>
   </article>
@@ -241,6 +298,8 @@
 
   <!-- Custom scripts for this template -->
   <script src="js/clean-blog.min.js"></script>
+<!-- Custom scripts for this website -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.0/prism.min.js"></script>
 
 </body>
 
