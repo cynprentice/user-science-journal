@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-163097537-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-163097537-1');
+  </script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>User Science Journal</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css " rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet'
+    type='text/css'>
+  <link
+    href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
+    rel='stylesheet' type='text/css'>
+  <link href="css/clean-blog.min.css" rel="stylesheet">
+
+  <!-- custom styles for this website-->
+  <link href="css/accessibility.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.0/themes/prism.min.css" />
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Cynthia Prentice</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+        data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+        aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Blog
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
+              <a class="dropdown-item" href="Post-Add-Analytics.html">Adding Analytics</a>
+              <a class="dropdown-item" href="Post-Make-Journal-Accessible.html">Applying Accessibility</a>
+              <a class="dropdown-item" href="Post-Evaluating-Accessibility.html">Evaluating Accessibility</a>
+              <a class="dropdown-item" href="Post-Mobile-Usability-Test.html">Mobile Usability Test</a>
+              <a class="dropdown-item" href="Post-Usability-Test.html">Usability Test</a>
+              <a class="dropdown-item" href="Post-Usable-Design.html">Usable Design</a>
+              <a class="dropdown-item" href="Post-Analyze-Usability.html">Analyze For Usability</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- Page Header -->
+
+  <header class="masthead" style="background-image: url('img/plant.jpg')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="site-heading">
+            <h1>Adding Analytics</h1>
+            <span class="meta">Posted by
+              <a href="#">Cynthia Prentice</a>
+              on May 24, 2020</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Post Content -->
+  <article>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <h2>Adding Analytics to Radix BCN</h2>
+          <p>This week's assignment is to add analytics to this journal or another website so that we can study and
+            experiment with how users are interacting with the site. Despite having added Google Analytics to this User
+            Science Journal, the analytics data I have to date is not very interesting. There have not been many
+            visitors to provide data. Because of this, I've chosen to use a different website, <a
+              href="www.radixbcn.com" target=_blank>www.radixbcn.com</a> for this
+            Google Analytics assessment.</p>
+          <p>The Radix BCN is a real estate buyer's agency based in Barcelona, Spain. The multilingual website offers
+            content in English, Spanish, and Dutch.
+            It consists of several informational pages and a blog. It began using Google Analytics on March 15th, 2017.
+          </p>
+
+          <img class="img-fluid web-page" src="img/RadixBCN/homePage.JPG" alt="">
+          <span class="caption text-muted">The English language home page for Radix BCN.</span>
+
+          <h3>Pre-Evaluation</h3>
+          <p>Before looking at the Google Analytics data, let's start with these 4 hypotheses about the website's users
+            and their
+            behavior. I'll test these against the data.</p>
+          <ol>
+            <li><strong>Demographics:</strong> Users are 35 and over and come from many different countries, including
+              Spain, Netherlands, United States, and United Kingdon.</li>
+            <li><strong>Acquisitions:</strong> Users come to the site by directly entering the URL or through search.
+            </li>
+            <li><strong>Devices:</strong> 75% of users are on a desktop. 25% are on a mobile device. </li>
+            <li><strong>Popular Pages:</strong> The most visited page of the site is the Home Page,
+              followed by the Property Search page, and then the Contact page.</li>
+          </ol>
+
+          <h3>Adding Google Analytics</h3>
+          <p>Radix BCN's website is built with <a href="https://www.wix.com" target=_blank>Wix</a>. Following <a
+              href="https://support.wix.com/en/article/adding-your-google-analytics-tracking-id-to-your-wix-site"
+              target=_blank>Wix's instructions for integrating with Google Analytics</a>, the Google tracking code was
+            added to the Google Analytics section of Wix's Marketing Integrations in March 2017.
+          </p>
+
+
+          <h3>Preliminary Findings</h3>
+          <p>I looked at lifetime data in Google Analytics to create these preliminary findings.</p>
+          <h4>Demographics</h4>
+          <h5>Age</h5>
+          <p>Users were younger than I expected. While 61% of users were 35 and over, the largest age group was 25-34
+            year olds at 32%. The 35-44 year old age group was second with 28% of users.</p>
+          <h5>Country</h5>
+          <table>
+            <caption> Top 5 Visitor Countries</caption>
+            <tr>
+              <th>Rank
+              <th>Country</th>
+              <th>% Users
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>Spain</td>
+              <td>33%</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Netherlands</td>
+              <td>19%</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>United States</td>
+              <td>10%</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Germany</td>
+              <td>4%</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>Brazil</td>
+              <td>4%</td>
+            </tr>
+          </table>
+          <p>As expected, users were an international group. There were visitors from 10 different countries. The
+            majority of visitors came from 3 different countries. </p>
+          <table>
+            <caption>Top 5 User Languages</caption>
+            <tr>
+              <th>Rank
+              <th>Country</th>
+              <th>%users
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>en-us</td>
+              <td>26%</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>es-es</td>
+              <td>16%</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>nl-nl</td>
+              <td>17%</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>en-gb</td>
+              <td>9%</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>nl</td>
+              <td>5%</td>
+            </tr>
+          </table>
+
+
+          <p> When language data is combined with country data, it suggests that many users are expats or global
+            travellers. While only 13% of users were located in English speaking countries, 35% of all users had English
+            as their language. </p>
+
+          <h4>Acquisitions</h4>
+          <img class="img-fluid web-page" src="img/RadixBCN/topChannels.JPG" alt="">
+          <span class=" caption text-muted">Pie chart of top channels shows that Direct(22.3%), Paid Search(21.6%),
+            Referrals(18.7%), Organic Search(17.9%), Display(10%), and Social(7.2%) were the top channels </span>
+          <p>Direct URL entry was the top channel follow closely by Paid Search. This is likely due to a 2018 paid
+            search campaign. Referrals were next due to peaks in February 2018, August 2018, and December 2019. The
+            number of visitors from organic search has been fairly steady with a small amount of growth year over year.
+          </p>
+          <p>The vast majority of referrals came from suspicious sources with "auto seo" or "auto traffic" in their name.
+            I'm ignoring those for this assessment as I don't believe they reflect actual user behavior.</p>
+          <p>Valid referrals came from: </p>
+          <ol>
+            <li>The Radix BCN link on the <a href="https://aepsi.es/quien-2/" target=_blank>Asociación Española de
+                Personal
+                Shopper Inmobiliario</a> website</li>
+            <li><a href="https://www.idealista.com" target=_blank>Idealista</a>, a real estate search engine, where
+              Radix has listed properties for rent</li>
+            <li><a href="https://www.espanje.nl/huis-kopen-barcelona-aankoopmakelaar/" target=_blank> Dutch magazine
+                article </a> on Radix</li>
+          </ol>
+
+
+          <h4>Devices</h4>
+          <p> It was much closer to a 50-50 split between desktop and mobile users, with a slight edge to desktop. Given
+            global trends in internet usage, I expect that mobile users will surpass desktop users of Radix BCN
+            eventually.</p>
+
+          <h4>Popular Pages</h4>
+          <table>
+            <caption class="caption">Top 7 Visited Pages</caption>
+            <tr>
+              <th>Rank
+              <th>Page</th>
+              <th>% Users
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>Home - English</td>
+              <td>27%</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Property Search</td>
+              <td>14%</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Home - Dutch</td>
+              <td>10%</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Property Management</td>
+              <td>8%</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>About</td>
+              <td>5%</td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>Contact</td>
+              <td>4%</td>
+            </tr>
+            <tr>
+              <td>7</td>
+              <td>Home - Spanish</td>
+              <td>3%</td>
+            </tr>
+          </table>
+          <p>The home pages are the most popular page in each language. The English language pages are visited far more
+            than the other languages. From a business perspective, Radix BCN would like to see more traffic on the
+            contact page and less on the property management page. Radix BCN is transitioning out of the property
+            management business and is in the process of removing that page from the site. </p>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <hr>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <ul class="list-inline text-center">
+
+            <li class="list-inline-item">
+              <a href="https://github.com/cynprentice" target="_blank" aria-label="Github">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+          </ul>
+          <p class="copyright text-muted">Copyright &copy; Cypr Web 2020</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/clean-blog.min.js"></script>
+  <!-- Custom scripts for this website -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.0/prism.min.js"></script>
+
+</body>
+
+</html>
