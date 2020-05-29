@@ -111,199 +111,25 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
-          <h2>Adding Analytics to Radix BCN</h2>
-          <p>This week's assignment is to add analytics to this journal or another website so that we can study and
-            experiment with how users are interacting with the site. Despite having added Google Analytics to this User
-            Science Journal, the analytics data I have to date is not very interesting. There have not been many
-            visitors to provide data. Because of this, I've chosen to use a different website, <a
-              href="www.radixbcn.com" target=_blank>www.radixbcn.com</a> for this
-            Google Analytics assessment.</p>
-          <p>The Radix BCN is a real estate buyer's agency based in Barcelona, Spain. The multilingual website offers
-            content in English, Spanish, and Dutch.
-            It consists of several informational pages and a blog. It began using Google Analytics on March 15th, 2017.
-          </p>
+          <h2>Radix BCN Analytics Goal</h2>
+          <p>This week I'm tracking to goal of viewing a video that explains Radix's unique Real Estate Personal Shopper service. </p>
+          <iframe width="360" height="203" src="https://www.youtube.com/embed/seK62qkiGLQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  
 
-          <img class="img-fluid web-page" src="img/RadixBCN/homePage.JPG" alt="">
-          <span class="caption text-muted">The English language home page for Radix BCN.</span>
+          <h3>How Do Users Achieve this Goal?</h3>
+          <p>To find this video, users must navigate to the <a href="https://www.radixbcn.com/blog" target=_blank>Radix Blog page</a> and find <a href="https://www.radixbcn.com/post/watch-radx-s-new-video" target=_blank>this entry</a>.
+        </p>
+        <img class="img-fluid web-page" src="img/RadixBCN/RadixBlog.JPG" alt="">
+        <span class=" caption text-muted">At the top right of the Radix Blog page, there is an entry for the new Radix video. </span>
 
-          <h3>Pre-Evaluation</h3>
-          <p>Before looking at the Google Analytics data, let's start with these 4 hypotheses about the website's users
-            and their
-            behavior. I'll test these against the data.</p>
+          <h3>How to Track this Goal with Google Analytics</h3>
+          <p>I used Google Tag Manager to track video views</p>
           <ol>
-            <li><strong>Demographics:</strong> Users are 35 and over and come from many different countries, including
-              Spain, Netherlands, United States, and United Kingdon.</li>
-            <li><strong>Acquisitions:</strong> Users come to the site by directly entering the URL or through search.
-            </li>
-            <li><strong>Devices:</strong> 75% of users are on a desktop. 25% are on a mobile device. </li>
-            <li><strong>Popular Pages:</strong> The most visited page of the site is the Home Page,
-              followed by the Property Search page, and then the Contact page.</li>
-          </ol>
-
-          <h3>Adding Google Analytics</h3>
-          <p>Radix BCN's website is built with <a href="https://www.wix.com" target=_blank>Wix</a>. Following <a
-              href="https://support.wix.com/en/article/adding-your-google-analytics-tracking-id-to-your-wix-site"
-              target=_blank>Wix's instructions for integrating with Google Analytics</a>, the Google tracking code was
-            added to the Google Analytics section of Wix's Marketing Integrations in March 2017.
-          </p>
-
-
-          <h3>Preliminary Findings</h3>
-          <p>I looked at lifetime data in Google Analytics to create these preliminary findings.</p>
-          <h4>Demographics</h4>
-          <h5>Age</h5>
-          <p>Users were younger than I expected. While 61% of users were 35 and over, the largest age group was 25-34
-            year olds at 32%. The 35-44 year old age group was second with 28% of users.</p>
-          <h5>Country</h5>
-          <table>
-            <caption> Top 5 Visitor Countries</caption>
-            <tr>
-              <th>Rank
-              <th>Country</th>
-              <th>% Users
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Spain</td>
-              <td>33%</td>
-            </tr>
-            <tr>
-              <td>2</td>
-              <td>Netherlands</td>
-              <td>19%</td>
-            </tr>
-            <tr>
-              <td>3</td>
-              <td>United States</td>
-              <td>10%</td>
-            </tr>
-            <tr>
-              <td>4</td>
-              <td>Germany</td>
-              <td>4%</td>
-            </tr>
-            <tr>
-              <td>5</td>
-              <td>Brazil</td>
-              <td>4%</td>
-            </tr>
-          </table>
-          <p>As expected, users were an international group. There were visitors from 10 different countries. The
-            majority of visitors came from 3 different countries. </p>
-          <table>
-            <caption>Top 5 User Languages</caption>
-            <tr>
-              <th>Rank
-              <th>Country</th>
-              <th>%users
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>en-us</td>
-              <td>26%</td>
-            </tr>
-            <tr>
-              <td>2</td>
-              <td>es-es</td>
-              <td>16%</td>
-            </tr>
-            <tr>
-              <td>3</td>
-              <td>nl-nl</td>
-              <td>17%</td>
-            </tr>
-            <tr>
-              <td>4</td>
-              <td>en-gb</td>
-              <td>9%</td>
-            </tr>
-            <tr>
-              <td>5</td>
-              <td>nl</td>
-              <td>5%</td>
-            </tr>
-          </table>
-
-
-          <p> When language data is combined with country data, it suggests that many users are expats or global
-            travellers. While only 13% of users were located in English speaking countries, 35% of all users had English
-            as their language. </p>
-
-          <h4>Acquisitions</h4>
-          <img class="img-fluid web-page" src="img/RadixBCN/topChannels.JPG" alt="">
-          <span class=" caption text-muted">Pie chart of top channels shows that Direct(22.3%), Paid Search(21.6%),
-            Referrals(18.7%), Organic Search(17.9%), Display(10%), and Social(7.2%) were the top channels </span>
-          <p>Direct URL entry was the top channel follow closely by Paid Search. This is likely due to a 2018 paid
-            search campaign. Referrals were next due to peaks in February 2018, August 2018, and December 2019. The
-            number of visitors from organic search has been fairly steady with a small amount of growth year over year.
-          </p>
-          <p>The vast majority of referrals came from suspicious sources with "auto seo" or "auto traffic" in their name.
-            I'm ignoring those for this assessment as I don't believe they reflect actual user behavior.</p>
-          <p>Valid referrals came from: </p>
-          <ol>
-            <li>The Radix BCN link on the <a href="https://aepsi.es/quien-2/" target=_blank>Asociación Española de
-                Personal
-                Shopper Inmobiliario</a> website</li>
-            <li><a href="https://www.idealista.com" target=_blank>Idealista</a>, a real estate search engine, where
-              Radix has listed properties for rent</li>
-            <li><a href="https://www.espanje.nl/huis-kopen-barcelona-aankoopmakelaar/" target=_blank> Dutch magazine
-                article </a> on Radix</li>
-          </ol>
-
-
-          <h4>Devices</h4>
-          <p> It was much closer to a 50-50 split between desktop and mobile users, with a slight edge to desktop. Given
-            global trends in internet usage, I expect that mobile users will surpass desktop users of Radix BCN
-            eventually.</p>
-
-          <h4>Popular Pages</h4>
-          <table>
-            <caption class="caption">Top 7 Visited Pages</caption>
-            <tr>
-              <th>Rank
-              <th>Page</th>
-              <th>% Users
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Home - English</td>
-              <td>27%</td>
-            </tr>
-            <tr>
-              <td>2</td>
-              <td>Property Search</td>
-              <td>14%</td>
-            </tr>
-            <tr>
-              <td>3</td>
-              <td>Home - Dutch</td>
-              <td>10%</td>
-            </tr>
-            <tr>
-              <td>4</td>
-              <td>Property Management</td>
-              <td>8%</td>
-            </tr>
-            <tr>
-              <td>5</td>
-              <td>About</td>
-              <td>5%</td>
-            </tr>
-            <tr>
-              <td>6</td>
-              <td>Contact</td>
-              <td>4%</td>
-            </tr>
-            <tr>
-              <td>7</td>
-              <td>Home - Spanish</td>
-              <td>3%</td>
-            </tr>
-          </table>
-          <p>The home pages are the most popular page in each language. The English language pages are visited far more
-            than the other languages. From a business perspective, Radix BCN would like to see more traffic on the
-            contact page and less on the property management page. Radix BCN is transitioning out of the property
-            management business and is in the process of removing that page from the site. </p>
+            <li>Creating a custom variables</li>
+            <li>Creating a tag</li>
+            <li>Creating a trigger</li>
+          </ul></p>
+         
         </div>
       </div>
     </div>
