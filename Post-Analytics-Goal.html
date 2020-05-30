@@ -5,11 +5,22 @@
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-163097537-1"></script>
   <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-WJ2LLNV');</script>
+  <script>
+    (function (w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({
+        'gtm.start': new Date().getTime(),
+        event: 'gtm.js'
+      });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != 'dataLayer' ? '&l=' + l : '';
+      j.async = true;
+      j.src =
+        'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-WJ2LLNV');
+  </script>
   <!-- End Google Tag Manager -->
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -47,9 +58,9 @@
 </head>
 
 <body>
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WJ2LLNV"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WJ2LLNV" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
@@ -111,25 +122,112 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
-          <h2>Radix BCN Analytics Goal</h2>
-          <p>This week I'm tracking to goal of viewing a video that explains Radix's unique Real Estate Personal Shopper service. </p>
-          <iframe width="360" height="203" src="https://www.youtube.com/embed/seK62qkiGLQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  
+          <h2>Radix Analytics Goal</h2>
+          <p>This week I'm using Google Analytics to track views of the "Meet Radix" YouTube video on the Radix website.
+            The video introduces Esther, Radix's founder, and explains Radix's unique Real Estate Personal Shopper
+            service.</p>
+          <iframe width="360" height="203" src="https://www.youtube.com/embed/seK62qkiGLQ" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <span class=" caption text-muted">This "Meet Radix" YouTube video is linked on RadixBCN's blog page.
+          </span>
 
           <h3>How Do Users Achieve this Goal?</h3>
-          <p>To find this video, users must navigate to the <a href="https://www.radixbcn.com/blog" target=_blank>Radix Blog page</a> and find <a href="https://www.radixbcn.com/post/watch-radx-s-new-video" target=_blank>this entry</a>.
-        </p>
-        <img class="img-fluid web-page" src="img/RadixBCN/RadixBlog.JPG" alt="">
-        <span class=" caption text-muted">At the top right of the Radix Blog page, there is an entry for the new Radix video. </span>
+          <p>To find this video, users navigate to the <a href="https://www.radixbcn.com/blog" target=_blank>Radix
+              Blog page</a> to find <a href="https://www.radixbcn.com/post/watch-radx-s-new-video" target=_blank>a blog
+              entry</a> introducing the video.
+          </p>
+          <img class="img-fluid web-page" src="img/RadixBCN/RadixBlog.JPG" alt="">
+          <span class=" caption text-muted">At the top right of the Radix Blog page, there is an entry for the new Radix
+            video. </span>
 
-          <h3>How to Track this Goal with Google Analytics</h3>
-          <p>I used Google Tag Manager to track video views</p>
+          <h3>How to Track this Goal</h3>
+          <p>We'll use Google Tag Manager in conjuction with Google Analytics to track these video views.</p>
+          <h4>Step 1: Integrate Google Tag Manager with the Radix website in Wix</h4>
           <ol>
-            <li>Creating a custom variables</li>
-            <li>Creating a tag</li>
-            <li>Creating a trigger</li>
-          </ul></p>
-         
+            <li>
+              I followed <a href="https://developers.google.com/tag-manager/quickstart" target=_blank>Google's
+                instructions</a> to create a Google Tag Manager Account.
+            </li>
+            <li>
+              I created an account for the Radix website and received a Google Tag Manager account ID with this format
+              GTM-XXXXXXX.
+            </li>
+            <li>I followed <a
+                href="https://support.wix.com/en/article/adding-your-google-tag-manager-account-id-to-your-wix-site"
+                target=_blank>Wix's instructions</a> to add the Google Tag Manager id to the Marketing Integrations
+              section of RadixBCN's dashboard.
+            </li>
+          </ol>
+          <p>Now I can use Google Tag Manager to track things that happen on this Wix-based website. </p>
+
+          <h4>Step 2: Enable YouTube Video Tracking in Google Tag Manager</h4>
+          <p>Next I went into my new Google Tag Manager account for Radix to set up the tracking of YouTube videos.</p>
+          <ol>
+            <li>Variable Setup: I configured the variables by navigating to the Variable sections and selecting the
+              "Configure" button. I then checked all the boxes for variables under the Video header.</li>
+            <img class="img-fluid web-page" src="img/RadixBCN/GTM-ConfigureVariables.JPG" alt="">
+            <span class=" caption text-muted">Screenshot of the Configure Variables screen within Google Tag Manager.
+              All 8 options under Videos are selected. </span>
+
+            <li>Trigger Setup: I navigated to the Triggers section and clicked the New button. I named it "YouTube Video
+              Trigger" and chose a trigger type of YouTube Video. In addition to the default options, I selected
+              Progress with 10, 25, 50, and 75 percent to be able to track how much of the video was watched by users.
+            </li>
+
+            <img class="img-fluid web-page" src="img/RadixBCN/GTM-YouTubeTrigger.JPG" alt="">
+            <span class=" caption text-muted">Screenshot of the Trigger Configuration within Google Tag
+              Manager.</span>
+
+            <li>I navigated to the Tags section and clicked the New button. I selected the following options for my new
+              Tag:
+              <ul>
+                <li>Name: GA-Event-YouTube</li>
+                <li>Tag Type: Google Analytics: Universal Analytics</li>
+                <li>Track Type: Event</li>
+                <li>Category: YouTube: {{Video Title}}</li>
+                <li>Action: {{Video Status}}</li>
+                <li>Label: {{Video Title}}</li>
+                <li>Value: {{Video Current Time}}</li>
+                <li>Non-Interaction Hit: True (so it wouldn't impact the Bounce Rate)</li>
+                <li>Google Analytics Settings: I created a Google Analytics Settings Variable with Radix's Google Site
+                  Tag, which has this format: UA-#########-#</li>
+              </ul>
+              <img class="img-fluid web-page" src="img/RadixBCN/GTM-YouTubeTag.JPG" alt="">
+              <span class=" caption text-muted">Screenshot of the Tag Configuration screen within Google Tag
+                Manager.</span>
+            </li>
+          </ol>
+
+
+          <h4>Step 3: Check out YouTube video views in Google Analytics</h4>
+          <p>Now that my tag is set up I can go into Google Analytics and see how users are interacting with the YouTube
+            video.</p>
+          <ol>
+            <li>In Google Analytics, I navigated to Behavior-->Site Content-->All Pages</li>
+            <li>I selected the page where the "Meet Radix" YouTube video is posted: "/blog"</li>
+            <li>To see which users have viewed the video, I added 2 Segments:
+              <ul>
+                <li>YouTube Video Viewers: This is a Condition that filters Sessions that include the Event Category
+                  that include the word YouTube. Remember in the last steps, I created a tag with the category of
+                  "YouTube - {{Video Name}}".
+                  <img class="img-fluid web-page" src="img/RadixBCN/GA-YouTubeViewerSegment.JPG" alt="">
+                  <span class=" caption text-muted">Screenshot of the Add Segment screen for adding "YouTube
+                    Viewers"</span>
+                </li>
+                <li>YouTube Video Non Viewers: This is a Condition that filters Sessions that don't include the Event
+                  Category that include the word YouTube.</span>
+                  <img class="img-fluid web-page" src="img/RadixBCN/GA-YouTubeNonViewersSegment.JPG" alt="">
+                  <span class=" caption text-muted">Screenshot of the Add Segment screen for adding "YouTube -
+                    NonViewers"</span>
+                </li>
+              </ul>
+            </li>
+            <li>Now I can see which users have viewed the watched the video and which users have not. It looks like
+              I need some more page views and video views to do some interesting analysis....
+              <img class="img-fluid web-page" src="img/RadixBCN/GA-YouTubeViewsData.JPG" alt="">
+              <span class=" caption text-muted">Screenshot of the last month's data shows 2 users visited the blog page and 0 users viewed the YouTube video.</span>
+            </li>
+          </ol>
         </div>
       </div>
     </div>
