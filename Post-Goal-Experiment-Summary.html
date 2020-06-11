@@ -109,10 +109,10 @@
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
           <div class="site-heading">
-            <h1>Content Experiement</h1>
+            <h1>Goal Experiment Summary</h1>
             <span class="meta">Posted by
               <a href="#">Cynthia Prentice</a>
-              on June 7, 2020</span>
+              on June 14, 2020</span>
           </div>
         </div>
       </div>
@@ -124,102 +124,106 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
-          <h2>Radix Content Experiment Overview</h2>
-          <p>This week I'm perfoming a content experiment to see if a change to the Radix website will encourage more
-            users to view the "Meet Radix" video.
+          <h2>Radix Content Experiment and Goal Tracking Overview</h2>
+          <p>For the past few weeks I have been using Google's tools to monitor visitor behavior of the <a
+              href="https://www.radixbcn.com/" target=_blank>Radix
+              website</a> and to drive them to watch the "Meet Radix" video. The website was built with <a href="https://www.wix.com" target=_blank>Wix.com</a>. The video was originally available only on
+            the Blog
+            page of the website. Based on user input, it was also added to the Personal Shopper page.
           </p>
-          <h2>Planning the Experiment</h2>
-          <p>Before setting up the experiment, I considered the goal in the context of a
-            user's experience on the entire Radix website. The "Meet Radix" video that we experimented with <a href="Post-Analytics-Goal.html"
-              alt="list to last week's blog post">last week</a> lived only on the blog page. After talking informally with users who viewed the video last week, I concluded that the blog was not the correct long term location for this video. It would get too easily lost when new blog entries were added, and the information was more relevant to users looking to learn specifially about the Personal Shopper experience.
-          </p>
-           <p> Based on this input, the video was added to a more prominent and permenant location: the top of the Personal Shopper page. </p>
-          <p>For this content experiment, I wanted to know: Are users more likely to press start on the video if it is
-            on the left side or right side of the page?</p>
+          <img class="img-fluid web-page" src="img/RadixBCN/RadixBlog.JPG" alt="">
+          <span class=" caption text-muted">At the top right of the Radix Blog page, there is an entry for the "Meet
+            Radix"
+            video. </span>
           <img class="img-fluid web-page" src="img/RadixBCN/ContentExperiementVariantOriginal.JPG" alt="">
-          <span class=" caption text-muted">This "Meet Radix" YouTube video is now included on the Personal Shopper page
+          <span class=" caption text-muted">This "Meet Radix" YouTube video is accessible through the Personal Shopper
+            page
             of the Radix website.
           </span>
-
-          <h2>Setting up the Content Experiment</h2>
-          <p>For this experiment, I'm creating an A/B test using Google Optimize, which is a free tool that works with
-            Google Analytics for running visitor tests on website content. Here are the steps I followed to set up my test:
-          </p>
-          <h3>Step 1: Connect Google Optimize with the Radix website</h3>
-          <p>First I created a Google Optimize account at <a href="https://optimize.google.com"
-              target=_blank>https://optimize.google.com</a> and noted my containter id.</p>
-          <p>Since I used Google Tag Manager to set up video tracking last week, I was then able to follow <a
-              href="https://support.google.com/optimize/answer/6314801?authuser=0" target=_blank>Google's
-              instructions</a> for setting up an Optimize tag with Tag Manager. Basically, I created a new tag
-            associated with my new Optimize Container Id and the Google Analytics property for Radix's website.</p>
-          <p>I also created a Tag to track Personal Shopper Page Views. In the Tag Sequencing section, I instructed it
-            to fire the Google Optmize tag before the Page View Tag.</p>
-          <img class="img-fluid web-page" src="img/RadixBCN/GTM-PersonalShopperPageViews.JPG" alt="">
-          <span class=" caption text-muted">In Google Tag Manager, the Google Optimize Tag is set up to fire before the
-            Personal Shopper Page View tag.
+          <h2>Have I been successful at driving my users to my goal?</h2>
+          <img class="img-fluid web-page" src="img/RadixBCN/GA-MeetRadixGoalConversions.JPG" alt="">
+          <span class=" caption text-muted">Google Analytics shows the vistors who achieved the goal of playing the
+            "Meet Radix" video
           </span>
+          <p>Since I started tracking this goal on the morning of June 3rd, 8 visitors have completed the goal of
+            viewing the "Meet Radix" video:</p>
+          <ul>
+            <li>5 visitors played the video from the English Property Search Page</li>
+            <li>2 visitors played it from the Spanish Property Search page</li>
+            <li>1 visitor played the video from the Blog page</li>
+          </ul>
+          <p> I can say that more people played the video after I started my experiment as there were no views in the week before starting the experiment.
+             However, it is challenging to
+            draw conclusions about success of the goal with such little data, especially when I look closer at it. </p>
+          <img class="img-fluid web-page" src="img/RadixBCN/GA-MeetRadixGoalFlow.JPG" alt="">
+          <span class=" caption text-muted">Google Analytics shows the source of sessions where the "Meet Radix" video
+            was played. 7 came directly to the Personal Shopper page. 1 from Google, 1 from Google Optimize, and 1 from
+            wix.com
+          </span>
+          <p> I'd like to say that the data shows that the Personal Shopper page is a better location for the video
+            because almost all new views were from that Page, but it's more likely that the increase in views is
+            directly
+            related to my efforts to obtain data for the Content Experiment. I sent the link to the Personal Shopper
+            page to friends and family
+            asking them to visit the Personal Shopper Page. The views seem to be from users navigating directly to the
+            Personal Shopper page rather than users who found their way there browsing the site from home page or other
+            starting point. I
+            assume the completions that originated from tools like Google Optimize
+            and Wix represent my own sessions when I was setting up and testing the experiment. Let's move on to those
+            results. </p>
 
 
-          <h3>Step 2: Create a variant in Google Optimize</h3>
-          <p> With Google Optimize now connected to the Radix website, I began configuring my Content Experiment. To do
-            this, I used the Google Chrome web browser and
-            the Google Optimize extension. </p>
-          <p>For this content experiment, I need only 1 variant, which I named the "Alt - Video Right" variant which has
-            the Meet Radix video on the right side of the page instead of the left.</p>
+
+          <h2>Content Experiment Results</h2>
+          <p>Last week, I set up a <a href="Post-Content-Experiment.html">Content Experiment</a> to see if more users
+            would click on the video if it were on the left or right side of the screen.</p>
+
           <img class="img-fluid web-page" src="img/RadixBCN/ContentExperiementVariantOriginal.JPG" alt="">
           <span class=" caption text-muted">In the Original version of the Personal Shopper page, the Meet Radix video
             is on the left side. </span>
           <img class="img-fluid web-page" src="img/RadixBCN/ContentExperiementVariantAlt.JPG" alt="">
           <span class=" caption text-muted">In the Alternative version of the Personal Shopper page, the Meet Radix
             video is on the right side. </span>
-          <p>It was really easy to set up this variant using Google Optimize. I was able to do a simple drag and drop to
-            switch the order of the text block and the video. I gave each of the 2 variants (the original and the
-            alternative) 50% weight and my variant set up was complete. </p>
-          <img class="img-fluid web-page" src="img/RadixBCN/ContentExperimentVariantSetup.JPG" alt="">
-          <span class=" caption text-muted">This screenshot shows the 2 variants set up in Google Optimize at 50% weight
-            each. </span>
 
-          <h3>Step 3: Set up the Target in Google Optimize</h3>
-          <p>The target URL for this content experiment is the Personal Shopper page in any language and all website
-            visitors. While the video still exists on the Blog page, we are not interested in measuring views on that
-            page for this experiment.</p>
-          <img class="img-fluid web-page" src="img/RadixBCN/ContentExperimentTargetSetup.JPG" alt="">
-          <span class=" caption text-muted">This screenshot shows the target page URL starts with
-            "www.radixbcn.com/property-search". </span>
-
-          <h3>Step 4: Set up Measurement in Google Optimize and Google Analytics</h3>
-          <img class="img-fluid web-page" src="img/RadixBCN/ContentExperimentMeasurementSetup.JPG" alt="">
-          <span class=" caption text-muted">This screenshot shows that the experiment is tied to the "MeetRadix Video
-            Views Goal" in Google Analytics. </span>
-
-          <p>To determine which variant is more successful, the experiment needs to be tied to a goal. In the
-            "Measurement and Objectives" section of Google Optimize, I tied the experiment to the website's Google
-            Analytics property. </p>
-
-          <p>In Google Analytics, I created a Goal to track the views of the Meet Radix video. </p>
-          <img class="img-fluid web-page" src="img/RadixBCN/GA-MeetRadixGoal.JPG" alt="">
-          <span class=" caption text-muted">This screenshot within Google Analytics shows a custom Event type goal set
-            up to track view of the Meet Radix YouTube video. </span>
-
-          <h3>Step 5: Check Installation in Google Optimize</h3>
-          <p>Within Google Optimize, I clicked the "Check Installation" button to verify that my experiment was set up
-            correctly.</p>
-          <img class="img-fluid web-page" src="img/RadixBCN/GO-CheckInstallation.JPG" alt="">
-          <span class=" caption text-muted">This screenshot shows that Google Optmize is correctly installed on the
-            Radix website, but the anti-flicker snippet was not found. </span>
-          <p>I received confirmation that Optimize was correctly installed, but received a warning that "You haven't
-            installed the anti-flicker snippet and your visitors may experience page flicker, where they briefly see the
-            original page before your experiment loads. This can skew your experiment results and confuse visitors."</p>
-          <p>Wix does not allow me to add scripts to the head section on a web page, so I had to proceed with the experiment without it.
+          <p>While Google Optimize recommends running this experiment for 2 week more, early results show the original
+            variant (video on the left side of the page) in the lead with a 78% change of being the winner. Based on
+            this data, I would say that having the video as the first piece of content on the page leads to more views
+            than when the text comes before the video.
           </p>
-          <p>I clicked the option to start my experiment, and it was off and running!</p>
-          <h2>Content Experiment Results</h2>
-          <img class="img-fluid web-page" src="img/RadixBCN/GO-ResultsNotEnoughData.JPG" alt="">
-          <span class=" caption text-muted">This screenshot shows that the Google Optmize Content Experiment does not
-            have enough data. </span>
-          <p>After running the experiment for a few days, it is still lacking data to determine whether more visitors
-            view the video when it is on the left or right side of the page. I'll attempt to encourage more page views
-            and see if we can get a conclusive result.</p>
+          <img class="img-fluid web-page" src="img/RadixBCN/GO-June10MeetRadixResults.JPG" alt="">
+          <span class=" caption text-muted">Early Google Optimize results show 18 experiment sessions. 8 saw the
+            original left hand placement of the video and 10 saw the alternate right hand placement. 37.5% of the
+            original layout sessions played the video. Only 20% of the alternate layout sessions played it.
+          </span>
+          <p>If the data continues to show that more visitors play the video in the original version of the page, I will
+            leave the video in that position when I end the experiment.
+          </p>
+
+          <h2>Other Data Considerations</h2>
+
+          <h3>Are you comfortable with this data collection and usage?</h3>
+          <p>I like the idea of using real data about user interaction with a website to make that website better for
+            those users. As we've learned with our usability tests in this course, observing users is one of best ways
+            to improve a website.</p>
+          <p>However, looking at the details that are available about individual users, such as their geographic
+            location along with what they clicked and when they clicked it, feels invasive. Users should at least know
+            that their interactions with the website are being recorded for analysis and given the option to opt out.
+          </p>
+
+          <h3>Have you been tempted to use less ethical means of converting users? </h3>
+          <p>While less ethical means such as misrespresenting links, spamming, and false keywords may create a temporary
+            increase in a goal like increasing video views, I believe this approach would backfire in the long run. It
+            would lead to disappointed, frustrating visitors who were not reaching the information they were looking for
+            and instill a feeling of distrust that would prevent them from returning.</p>
+
+          <h3>Are these Google's tools for tracking and analyzing visitor data usable?</h3>
+          <p>Yes, I was particulary impressed with how easy it was to create an alternate version of a web page in
+            Google Optimize for the Content Experiment. Not only does the tool track the results of the experiment, but
+            alternate variations are created directly in the tool. </p>
+          <p>I feel like I've just scratched the surface of what Google Analytics and Google Tag Manager can do, but it
+            was helpful to get some experience in how to use them to measure user behavior that is important for a
+            website </p>
+
 
 
         </div>
